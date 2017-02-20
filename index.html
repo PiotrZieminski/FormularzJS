@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Formularz</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <form>
+                    <div class="form-group">
+                        <label for="movie-title">Kwota do opodatkowania</label>
+                        <input id="movie-title" class="form-control" placeholder="Titanic">
+                    </div>
+                </form>
+                <div class="form-group">
+                    <label for="kraj">Wynik obliczenia</label>
+                    <select id="kraj" class="form-control">
+                        <option value="polskaVat">Polska</option>
+                        <option value="czechyVat">4</option>
+                        <option value="niemcyVat">3</option>
+                        <option value="angliaVat">2</option>
+                        <option value="francjaVat">1</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="produkt">Wynik obliczenia</label>
+                    <select id="produkt" class="form-control">
+                        <option value="hotel">Polska</option>
+                        <option value="autostrada">4</option>
+                        <option value="paliwo">3</option>
+                        <option value="diety">2</option>
+                    </select>
+                </div>
+                <button id="add-calcVat" class="btn btn-success">Oblicz</button>
+                <div class="form-group">
+                    <label for="calcVat">Wynik końcowy zapłaty</label>
+                    <input id="calcVat" class="form-control" placeholder="Wynik końcowy">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <div class="table-responsive">
+                    <table id="movie-library" class="table">
+                        <thead>
+                        <tr>
+                            <th>Lp.</th>
+                            <th>Rodzaj usługi</th>
+                            <th>Kwota netto</th>
+                            <th>Kwota brutoo</th>
+                            <th>Akcje</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
